@@ -1,0 +1,189 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: radial-gradient(farthest-corner at 40px 40px,rgba(235, 17, 119, 0.959),rgba(211, 14, 96, 0.925),rgba(223, 135, 245, 0.39));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Amiri', serif;
+    color: #FFF9C4;
+}
+
+.container{
+    max-width: 978px;
+    max-height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: get_in_from_right 1s 1s ease-out ;
+    animation-fill-mode: backwards;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right,white,rgba(112, 248, 241, 0.993)) ;
+    color: transparent;
+    letter-spacing: 2px;
+    padding-bottom: 1.2rem;
+    text-decoration: underline;
+    transition: all .4s;
+    user-select: none;
+}
+h1:hover{
+    background-image: linear-gradient(to left,white,rgba(112, 248, 241, 0.993)) ;
+    transform: skewX(2deg) skewY(-3deg) scale(1.1);
+}
+
+p{
+    padding-bottom: 12px;
+    font-size: 20px;
+   
+    
+}
+
+
+
+
+main{
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.herobox1{
+    flex: 2;
+    
+}
+
+.herobox2{
+    flex:1;
+    border: 1px solid rgba(209, 97, 243, 0.308, 0.808);
+}
+
+.cards{
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card1{
+    min-height: 300px;
+    width: 30%;
+    background-image: url('images/card1.jpg');
+    background-size: cover;
+    border-radius:  40px 28px;
+    transition: all .3s;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
+
+
+}
+.card2{
+    min-height: 300px;
+    width: 30%;
+    background-image: url('images/card2.jpg');
+    background-size: cover;
+    border-radius:  40px 28px;
+    transition: all .3s;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
+ 
+}
+.card3{
+    min-height: 300px; 
+    width: 30%;
+    background-image: url('images/card3.jpg');
+    background-size: cover;
+    border-radius:  40px 28px;
+    transition: all .3s;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
+
+}
+
+.cards h2{
+    font-size: 1.85rem;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+    color: wheat;
+}
+
+
+.cards p{
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: rgb(233, 245, 247);
+    margin: 20px 30px 20px 30px;
+    font-style: italic;
+    
+}
+
+.for_card_link:link,
+.for_card_link:visited{
+    text-decoration: none;
+    color: white;
+} 
+
+
+.card1:hover{
+    transform: scale(1.1) skewX(-1deg);
+
+}
+.card2:hover{
+    transform: scale(1.1) skewX(-1deg);
+    
+}
+.card3:hover{
+    transform: scale(1.1) skewX(-1deg);
+    
+}
+
+
+b{
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+    text-decoration-style: solid;
+}
+strong{
+    color: rgb(253, 253, 253);
+    text-decoration: solid;
+}
+
+
+i{
+    font-size: 120px;
+}
+
+@keyframes get_in_from_right{
+    0%{
+        opacity: 0;
+        transform: rotateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+
