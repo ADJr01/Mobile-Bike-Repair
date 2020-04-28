@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 html{
     height: 100%;
 }
@@ -36,7 +41,7 @@ h1{
     display: inline-block;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(to right,white,rgba(112, 248, 241, 0.993)) ;
+    background-image: linear-gradient(to right,white,rgba(70, 247, 238, 0.993)) ;
     color: transparent;
     letter-spacing: 2px;
     padding-bottom: 1.2rem;
@@ -45,7 +50,7 @@ h1{
     user-select: none;
 }
 h1:hover{
-    background-image: linear-gradient(to left,white,rgba(112, 248, 241, 0.993)) ;
+    background-image: linear-gradient(to left,white,rgba(77, 248, 240, 0.993)) ;
     transform: skewX(2deg) skewY(-3deg) scale(1.1);
 }
 
@@ -66,6 +71,34 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+
+
+.book{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family:'Amiri', serif;
+    font-weight: 300;
+    margin: 2px;
+    color: rgb(255, 0, 64);
+    border-color: rgb(255, 0, 64);
+    border-radius: 7px;
+    transition: all .3s;
+    padding: 1px 8px;
+}
+.book:hover{
+    color: white;
+    background-color: rgb(252, 1, 64);
+    box-shadow: 2px 1rem 1.5rem #303030;
+    transform: translateY(-4px);
+  }
+  .book:active{
+    color:rgb(252, 1, 64);
+    background-color: white;
+    transform: translateY(-2px) translateX(2px) ;
+    box-shadow: 0 4px 1rem #1d1212ab;
+} 
+
+
 
 
 .herobox1{
